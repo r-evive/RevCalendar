@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #fedb3a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calendar {
+  width: 25rem;
+  height: 30rem;
+  background-color: #fafafa;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.calendar__title {
+  padding: 0 1rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calendar__title span {
+  font-size: 1.6rem;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 1rem;
+}
+
+.calendar__title__currentMonth {
+  text-align: center;
+}
+
+.calendar__title__currentMonth h1 {
+  font-size: 1.8rem;
+}
+
+.calendar__title__currentMonth h2 {
+  font-size: 1rem;
+}
+
+.calendar__content {
+  height: 100%;
+  width: 100%;
+}
+
+.calendar__content__weekDays {
+  width: 100%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #070813;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  font-weight: 600;
+}
+
+.calendar__content__weekDays div {
+  width: calc(100% / 7);
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  color: #fce3af;
+}
+
+.calendar__content__days {
+  width: 100%;
+  padding: 0 1rem 0rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 0.8rem;
+  display: flex;
+}
+
+.calendar__content__days div {
+  width: calc((100% / 7) - 1rem);
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 0.5rem 0.5rem;
+  height: 2.3rem;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.calendar__content__days div.previous {
+  color: #ccc;
+}
+
+.calendar__content__days div:hover {
+  border: 1px solid #e1e1e1;
+}
+
+.calendar__content__days div.active {
+  background-color: #fe6219;
+  color: #fff;
+  border-radius: 100%;
+}
+
+.calendar__content__days div.active:hover {
+  border: none;
+}
+
+.calendar__content__days div.start {
+  background-color: blue;
+}
+
+.calendar__content__days div.end {
+  background-color: green;
+}
+/*# sourceMappingURL=style.css.map */
